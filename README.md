@@ -18,6 +18,6 @@ configuration {
 	modi: "scratchpad:/path/to/script/rofi_i3_scratchpad";
 }
 ```
-Other modi can be added as usual seprarated by commas.  
+Other modi can be added as usual seprarated by commas; the mode also doesn't have to be called "scratchpad", any name or glyph can be used.  
 
-The i3 scratchpad mode should then be available when launching Rofi, offering a list of window IDs and titles along with "All Windows". Choosing any option will bring the selected window from the scratchpad, close Rofi and focus the window ("All Windows" will bring all windows from the scratchpad). If there are no windows in the scratchpad, "No Windows in Scratchpad" will be stated; selecting this option closes Rofi.
+The i3 scratchpad mode should then be available when launching Rofi, offering a list of window IDs and corresponding titles along with "All Windows". Choosing any option will bring the selected window from the scratchpad, close Rofi and focus the window ("All Windows" will bring all windows from the scratchpad). If there are no windows in the scratchpad, "No Windows in Scratchpad" will be stated; selecting this option closes Rofi.
