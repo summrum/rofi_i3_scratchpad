@@ -5,7 +5,6 @@ An i3 scratchpad window selector mode for Rofi.
 **Rofi** window switcher/application launcher/dmenu replacement  
 **i3** improved tiling window manager  
 **jq** command line JSON processor  
-**sed** stream editor  
 ## Usage:
 Ensure script is executable, then use one of the following options to add to your Rofi modi:  
 
