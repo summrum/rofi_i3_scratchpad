@@ -6,7 +6,7 @@ scratched="$(i3-msg -t get_tree | jq '.nodes[] | .nodes[] | .nodes[] | select(.n
 if [ "$@" ]; then
 	# show all windows and none in scratchpad options
 	if [ "$@" = "All Windows" ]; then
-		i3-msg '[class=.] scratchpad show' && pkill rofi
+		i3-msg '[class=.] scratchpad show' && sleep 0.1s && pkill rofi
 	elif [ "$@" = "No Windows in Scratchpad" ]; then
 		exit 0
 	# bring chosen window from scratchpad
