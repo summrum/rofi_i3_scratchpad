@@ -1,5 +1,5 @@
 # Rofi i3 Scratchpad Mode
-An i3 scratchpad window selector mode for Rofi.
+An i3 scratchpad window selector mode for Rofi. Not really of all that much use alongside the standard Rofi window mode, except that it _only_ selects scratchpad windows (so can be less cluttered in some situations) and also allows for presenting all scratchpad windows.  
 ## Requirements:
 **POSIX shell**  
 **Rofi** window switcher/application launcher/dmenu replacement  
