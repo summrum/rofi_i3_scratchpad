@@ -1,5 +1,5 @@
 #!/usr/bin/sh
-# rofi i3 scratchpad menu mode v1.1
+# rofi i3 scratchpad menu mode v1.2
 
 # create list of window IDs and titles in scratchpad
 if [ "$(which jq)" ]; then
@@ -8,7 +8,7 @@ if [ "$(which jq)" ]; then
 		# show all windows and none in scratchpad options
 		case "$@" in
 			"All Windows")
-			i3-msg '[class=.] scratchpad show' && sleep 0.1s && pkill rofi
+			i3-msg '[class=.] scratchpad show' && sleep 0.1s && pkill -u $USER rofi
 			;;
 			"No Windows in Scratchpad")
 			exit 0
@@ -16,7 +16,7 @@ if [ "$(which jq)" ]; then
 		# bring chosen window from scratchpad
 			*)
 	    	winid=$(echo "$@" | cut -f1)
-	    	i3-msg "[id="$winid"] scratchpad show" && pkill rofi
+	    	i3-msg "[id=$winid] scratchpad show" && pkill -u $USER rofi
 	    	;;
 	    esac
 	else
