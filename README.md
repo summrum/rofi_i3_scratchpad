@@ -1,9 +1,9 @@
-# Rofi i3 Scratchpad Mode
-An i3 scratchpad window selector mode for Rofi. Not really of all that much use alongside the standard Rofi window mode, except that it _only_ selects scratchpad windows (so can be less cluttered in some situations) and also allows for presenting all scratchpad windows.  
+# Rofi i3/sway Scratchpad Mode
+An i3/sway scratchpad window selector mode for Rofi. Not really of all that much use alongside the standard Rofi window mode, except that it _only_ selects scratchpad windows (so can be less cluttered in some situations) and also allows for presenting all scratchpad windows.  
 ## Requirements:
 **POSIX shell**  
-**Rofi** window switcher/application launcher/dmenu replacement  
-**i3** improved tiling window manager  
+**Rofi** or **Rofi-wayland** window switcher/application launcher/dmenu replacement  
+**i3** or **sway** improved tiling window manager  
 **jq** command line JSON processor  
 **pkill** process command
 ## Usage:
