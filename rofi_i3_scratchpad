@@ -4,7 +4,7 @@
 if [ "$(which jq)" ]; then
 	case "$WAYLAND_DISPLAY" in
 		wayland*)
-			scratched="$(swaymsg -t get_tree | jq -r '.. | objects | select(.name == "__i3_scratch") | .. | objects | select(has("app_id")) | "\(.id) \(.app_id // .window_properties.class) - \(.name)"' | sed 's/&/&amp;/g')"
+			scratched="$(swaymsg -t get_tree | jq -r '.. | objects | select(.name == "__i3_scratch") | .. | objects | select(has("app_id")) | "\(.id) \(.app_id // .window_properties.class) - \(.name)"')"
 			if [ "$@" ]; then
 				case "$@" in
 					"All Windows")
